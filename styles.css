@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(224, 129, 145);
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 400% 400%; 
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inputField {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 15%;
+    height: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f57887, #7462ff);
+    justify-content: center;
+    display: flex;
+}
