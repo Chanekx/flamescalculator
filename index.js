@@ -47,20 +47,22 @@ function resultMessage(result) {
 function calculate() {
     var firstPerson = document.getElementById("firstPerson").value.replace(/\s/g, '').toUpperCase();
     var secondPerson = document.getElementById("secondPerson").value.replace(/\s/g, '').toUpperCase();
+    const resultModal = document.getElementById("resultModal");
+    const resultMessageElement = document.getElementById("modalResult");
 
-    if(firstPerson !== "" && secondPerson !== ""){
+    if (firstPerson !== "" && secondPerson !== "") {
         var commonCount = commonCharacterCount(firstPerson, secondPerson);
         var total = (firstPerson.length - commonCount) + (secondPerson.length - commonCount);
         var result = flamesIteration(total);
         var message = resultMessage(result);
-
-        document.getElementById("result").value = message;
-    } else {
-        alert("Please enter both names!");
+        
+        resultMessageElement.textContent = message;
+        resultModal.style.display = "block";
     }
 }
 
-function reloadSite(){
+function closeModal() {
+    document.getElementById("resultModal").style.display = "none";
     location.reload();
     console.log("Page reloaded");
 }
