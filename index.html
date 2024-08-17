@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FLAMES Simulator</title>
 </head>
 <body>
@@ -17,17 +18,20 @@
             <input type="text" id="secondPerson" name="secondPerson" class="inputField" placeholder="Their Name"><br><br>
             <input type="button" id="submit" name="submit" class="button" value="Calculate Relationship" onClick="calculate()"><br><br>
         </div>
-
-        <div class="cardview">
-            <p>Made by: <a href="https://chanekx.vercel.app/" target="_blank">Chanekx</a></p>
-            <p>This web application is inspired by a game I played as a kid called "FLAMES".</p>
+        
+         <div class="cardview">
+            <h3>Contact me here<h3>
+       <a href="https://chanekx.vercel.app/"><i class="fa-solid fa-envelope"></i></a> 
         </div>
+      
         <div id="resultModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onClick="closeModal()">&times;</span>
                 <p id="modalResult"></p>
             </div>
         </div>
+        <div class="copyright">© 2024 Chanekx</div>
     </div>
+    
 </body>
 </html>

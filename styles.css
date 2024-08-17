@@ -50,18 +50,15 @@ h1, h2 {
 }
 
 .cardview {
-    background-color: #333;
-    padding: 20px;
-    color: white;
+    padding: 15px; /* Increased padding to fit both elements comfortably */
     position: absolute;
     right: 20px;
     bottom: 20px;
     width: 200px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(240, 85, 193);
 }
-
 .button {
     width: 50%;
     height: 50px;
@@ -98,9 +95,10 @@ h1, h2 {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .close-button {
@@ -115,4 +113,14 @@ h1, h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.fa-envelope{
+ font-size: 50px;
+}
+.fa-envelope:hover{
+ transform:scale(1.50);
+}
+.copyright {
+    margin-top: 10px; 
+    padding: 10px; 
 }
